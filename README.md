@@ -138,37 +138,6 @@ Install Python dependencies in your virtual environment:
 python3 -m pip install -r requirements.txt
 ```
 
-Run FastAPI in Terminal 1:
-
-```bash
-set -a
-source .env.local
-set +a
-uvicorn api.index:app --reload --port 8000
-```
-
-Run Next.js in Terminal 2:
-
-```bash
-npm run dev
-```
-
-The development rewrite in `next.config.ts` forwards `/api` to `http://127.0.0.1:8000/api`.
-
-Open:
-
-```text
-http://localhost:3000
-```
-
-Useful checks:
-
-```bash
-npm run lint
-npx tsc --noEmit
-npm run build
-```
-
 ## Deploying to Vercel
 
 Vercel recognizes `api/index.py` as a Python Function and exposes it at `/api`. The development-only rewrite is disabled in production, so production requests reach the Python Function directly.
