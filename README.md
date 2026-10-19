@@ -1,5 +1,7 @@
 # MediNotes Pro
 
+**Live demo:** [MediNotes Pro on Vercel](https://consult-6r0zgqwy4-patrick079s-projects.vercel.app/)
+
 MediNotes Pro is a full-stack AI consultation assistant that turns clinician notes into a professional visit summary, clear next steps, and a patient-friendly follow-up email.
 
 This project is designed as a small SaaS product rather than a raw AI demo. It includes authentication, subscription billing, a protected AI API, streamed responses, responsive product UI, and Vercel deployment support.
